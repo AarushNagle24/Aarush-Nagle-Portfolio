@@ -60,7 +60,7 @@ export const experiences = [
     period: 'May - June 2026',
     link: 'https://varshajagadeesh.github.io/Aardvarks_portfolio/',
     linkLabel: 'View Internship Portfolio',
-    image: asset('images/gavel-quill.svg'),
+    image: asset('images/gavel-quill.png'),
     fallbackImage: asset('images/gavel-quill.svg'),
     description: 'Worked on multiple software projects during a startup incubator internship.',
     spotlights: [
@@ -174,6 +174,8 @@ export const education = [
     credential: 'B.S. in Computer Science',
     period: 'August 2024 - May 2028',
     gpa: '3.92 / 4.0',
+    image: asset('images/uva-rotunda.jpg'),
+    imageAlt: 'The Rotunda at the University of Virginia',
     featured: true,
   },
   {
@@ -182,6 +184,8 @@ export const education = [
     credential: 'Advanced Diploma',
     period: 'August 2020 - June 2024',
     gpa: '4.47',
+    image: asset('images/oakton-high-school.jpg'),
+    imageAlt: 'Oakton High School main entrance',
   },
 ];
 

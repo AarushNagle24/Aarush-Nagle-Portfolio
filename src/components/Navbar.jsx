@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { Github, Linkedin, Menu, Moon, Sun, X } from 'lucide-react';
+import { Github, Menu, Moon, Sun, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { navLinks, socials } from '../data/portfolio.js';
+import LinkedInBoxIcon from './LinkedInBoxIcon.jsx';
 
 export default function Navbar({ theme, onToggleTheme }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +48,7 @@ export default function Navbar({ theme, onToggleTheme }) {
           rel="noreferrer"
           aria-label="LinkedIn"
         >
-          <Linkedin size={18} aria-hidden="true" />
+          <LinkedInBoxIcon size={18} />
         </a>
         <button
           className="icon-button"

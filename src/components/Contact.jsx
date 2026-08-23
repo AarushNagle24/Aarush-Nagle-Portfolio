@@ -1,6 +1,7 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Mail } from 'lucide-react';
 import { socials } from '../data/portfolio.js';
 import GlassCard from './GlassCard.jsx';
+import LinkedInBoxIcon from './LinkedInBoxIcon.jsx';
 
 export default function Contact() {
   return (
@@ -25,7 +26,7 @@ export default function Contact() {
               Email Me
             </a>
             <a className="button button-secondary" href={socials.linkedin} target="_blank" rel="noreferrer">
-              <Linkedin size={18} aria-hidden="true" />
+              <LinkedInBoxIcon size={18} />
               LinkedIn
             </a>
             <a className="button button-secondary" href={socials.github} target="_blank" rel="noreferrer">

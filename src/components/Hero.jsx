@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, ArrowRight, Github, Linkedin, Map, Sparkles, TerminalSquare } from 'lucide-react';
+import { ArrowDown, ArrowRight, Github, Map, Sparkles, TerminalSquare } from 'lucide-react';
 import { heroMetrics, socials } from '../data/portfolio.js';
+import LinkedInBoxIcon from './LinkedInBoxIcon.jsx';
 import MetricCard from './MetricCard.jsx';
 
 export default function Hero() {
@@ -62,7 +63,7 @@ export default function Hero() {
             GitHub
           </a>
           <a className="button button-secondary" href={socials.linkedin} target="_blank" rel="noreferrer">
-            <Linkedin size={18} aria-hidden="true" />
+            <LinkedInBoxIcon size={18} />
             LinkedIn
           </a>
         </motion.div>

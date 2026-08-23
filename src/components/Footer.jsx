@@ -1,5 +1,6 @@
-import { Github, Linkedin } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { socials } from '../data/portfolio.js';
+import LinkedInBoxIcon from './LinkedInBoxIcon.jsx';
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
             <Github size={18} aria-hidden="true" />
           </a>
           <a href={socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <Linkedin size={18} aria-hidden="true" />
+            <LinkedInBoxIcon size={18} />
           </a>
         </div>
       </div>

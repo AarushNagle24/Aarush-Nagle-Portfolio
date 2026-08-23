@@ -1,6 +1,7 @@
 import { GraduationCap } from 'lucide-react';
 import { coursework, education } from '../data/portfolio.js';
 import GlassCard from './GlassCard.jsx';
+import ImageWithFallback from './ImageWithFallback.jsx';
 import SectionHeader from './SectionHeader.jsx';
 
 export default function EducationSection() {
@@ -18,6 +19,14 @@ export default function EducationSection() {
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.5 }}
             >
+              <div className="education-media">
+                <ImageWithFallback
+                  src={item.image}
+                  fallback={item.image}
+                  alt={item.imageAlt}
+                  className="education-image"
+                />
+              </div>
               <div className="education-icon" aria-hidden="true">
                 <GraduationCap size={24} />
               </div>

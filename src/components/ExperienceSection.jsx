@@ -28,7 +28,9 @@ export default function ExperienceSection() {
 function ExperienceCard({ experience, index }) {
   return (
     <GlassCard
-      className={`experience-card ${experience.featured ? 'experience-card-featured' : ''}`}
+      className={`experience-card experience-${experience.id} ${
+        experience.featured ? 'experience-card-featured' : ''
+      }`}
       initial={{ opacity: 0, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-80px' }}
