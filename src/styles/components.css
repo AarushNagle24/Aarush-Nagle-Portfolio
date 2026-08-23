@@ -594,7 +594,7 @@
 
 .experience-gavel-quill .experience-media {
   width: min(100%, 400px);
-  justify-self: center;
+  justify-self: start;
   background:
     radial-gradient(circle at 50% 36%, rgba(245, 211, 125, 0.24), transparent 42%),
     linear-gradient(135deg, rgba(83, 56, 28, 0.72), rgba(20, 16, 13, 0.62)),
