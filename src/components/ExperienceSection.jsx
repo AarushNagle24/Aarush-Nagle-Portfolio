@@ -13,7 +13,6 @@ export default function ExperienceSection() {
           id="experience-heading"
           eyebrow="Experience"
           title="Experience"
-          subtitle="Building software in startups and for millions of players."
         />
         <div className="experience-list">
           {experiences.map((experience, index) => (

@@ -8,14 +8,6 @@ export default function Hero() {
   return (
     <section className="hero-section section-shell" id="home" aria-labelledby="hero-heading">
       <div className="hero-copy">
-        <motion.p
-          className="eyebrow"
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Software engineering portfolio
-        </motion.p>
         <motion.h1
           id="hero-heading"
           initial={{ opacity: 0, y: 26 }}
@@ -38,8 +30,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, delay: 0.18 }}
         >
-          Computer Science student at the University of Virginia building software, AI tools,
-          mapping applications, and games used by millions of people.
+          Third-year Computer Science student at the University of Virginia.
         </motion.p>
 
         <div className="hero-metrics" aria-label="Portfolio metrics">

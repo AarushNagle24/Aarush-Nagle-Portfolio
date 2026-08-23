@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">XON Studios mark</title>
+  <desc id="desc">XON Studios X mark on a blue gradient background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3e6"/>
+      <stop offset="1" stop-color="#55a9ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="900" rx="28" fill="url(#bg)"/>
+  <path d="M250 150h155l82 109 82-109h155L565 363l176 258H586l-101-142-101 142H229l176-258L250 150Zm107 78 89 121-92 133h45l88-124 89 124h45l-92-133 89-121h-45l-86 114-85-114h-45Z" fill="#111827"/>
+</svg>

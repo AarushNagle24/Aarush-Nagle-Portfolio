@@ -45,7 +45,7 @@ export default function EducationSection() {
           <SectionHeader id="coursework-heading" eyebrow="Coursework" title="Coursework" />
           <div className="coursework-grid">
             <CourseGroup title="Completed" items={coursework.completed} />
-            <CourseGroup title="Current" items={coursework.current} current />
+            <CourseGroup title="Current" items={coursework.current} />
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ export default function EducationSection() {
   );
 }
 
-function CourseGroup({ title, items, current = false }) {
+function CourseGroup({ title, items }) {
   return (
     <GlassCard
       className="course-card"
@@ -63,12 +63,20 @@ function CourseGroup({ title, items, current = false }) {
       transition={{ duration: 0.5 }}
     >
       <h3>{title}</h3>
-      <div className="course-pill-grid">
-        {items.map((item) => (
-          <span className={`course-pill ${current && /AI|Machine|Reinforcement|Artificial/.test(item) ? 'ai-pill' : ''}`} key={item}>
-            {item}
-          </span>
-        ))}
+      <div className="course-list">
+        {items.map((item) => {
+          const [code, ...titleParts] = item.split(' - ');
+          const hasCourseCode = /^[A-Z]{2,4}\s\d{4}$/.test(code);
+          const courseCode = hasCourseCode ? code : 'MATH';
+          const courseTitle = hasCourseCode ? titleParts.join(' - ') : item;
+
+          return (
+            <div className="course-item" key={item}>
+              <span className="course-code">{courseCode}</span>
+              <span className="course-title">{courseTitle || item}</span>
+            </div>
+          );
+        })}
       </div>
     </GlassCard>
   );

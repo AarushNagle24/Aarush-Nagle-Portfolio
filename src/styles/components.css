@@ -998,30 +998,36 @@
   padding: 26px;
 }
 
-.course-pill-grid {
-  display: flex;
-  flex-wrap: wrap;
+.course-list {
+  display: grid;
   gap: 8px;
 }
 
-.course-pill {
-  display: inline-flex;
-  min-height: 36px;
+.course-item {
+  display: grid;
+  grid-template-columns: minmax(96px, 0.28fr) minmax(0, 1fr);
+  gap: 12px;
   align-items: center;
-  max-width: 100%;
-  padding: 0 12px;
+  min-height: 42px;
+  padding: 10px 12px;
   border: 1px solid var(--glass-border);
-  border-radius: 999px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.07);
   color: var(--muted-strong);
-  font-size: 0.86rem;
-  font-weight: 690;
 }
 
-.ai-pill {
-  border-color: rgba(143, 184, 255, 0.34);
-  background: rgba(143, 184, 255, 0.11);
-  color: var(--text-strong);
+.course-code {
+  color: var(--muted-strong);
+  font-size: 0.86rem;
+  font-weight: 760;
+  white-space: nowrap;
+}
+
+.course-title {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 650;
+  overflow-wrap: anywhere;
 }
 
 .skill-heading {
@@ -1432,7 +1438,8 @@
   .stat-row span,
   .project-metrics span,
   .chip,
-  .course-pill {
+  .course-item,
+  .course-title {
     max-width: 100%;
     overflow-wrap: anywhere;
   }

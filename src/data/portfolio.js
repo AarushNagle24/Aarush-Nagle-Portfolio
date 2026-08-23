@@ -8,7 +8,6 @@ export const socials = {
 };
 
 export const navLinks = [
-  { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Education', href: '#education' },
@@ -31,17 +30,17 @@ export const experiences = [
     period: 'March 2021 - Present',
     link: 'https://www.roblox.com/communities/9895654/XON-Studios',
     linkLabel: 'View Roblox Community',
-    image: asset('images/xon-studios.png'),
-    fallbackImage: asset('images/xon-fallback.svg'),
+    image: asset('images/xon-studios-mark.svg'),
+    fallbackImage: asset('images/xon-studios-mark.svg'),
     description:
-      'Founded XON Studios, an independent Roblox development studio whose games have reached more than 50 million players worldwide.',
+      'Founded XON Studios, an independent Roblox development studio whose games have reached 190+ million plays and more than 50 million players worldwide.',
     highlights: [
       'Developed and maintained Roblox games using Lua scripting, UI design, bug fixes, performance optimization, and content updates.',
       'Managed advertising campaigns and partnerships.',
       'Hired and coordinated programmers and artists.',
-      "Earned Roblox's Black Iron Crown of O's in 2022 after surpassing 1 million monthly active users across the studio's titles.",
+      "Reached 190+ million total plays across the studio's titles.",
     ],
-    stats: ['50M+ Players', '1M+ Monthly Active Users Milestone', "2022 Black Iron Crown of O's"],
+    stats: ['50M+ Players', '1M+ Monthly Active Users Milestone', '190+ million plays'],
     technologies: [
       'Lua',
       'Roblox Studio',

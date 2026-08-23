@@ -14,12 +14,7 @@ export default function Contact() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.55 }}
         >
-          <p className="eyebrow">Contact</p>
-          <h2 id="contact-heading">Let's build something useful.</h2>
-          <p>
-            For software engineering opportunities, collaboration, or questions about my projects,
-            feel free to reach out.
-          </p>
+          <h2 id="contact-heading">Contact</h2>
           <div className="contact-actions">
             <a className="button button-primary" href={socials.email}>
               <Mail size={18} aria-hidden="true" />

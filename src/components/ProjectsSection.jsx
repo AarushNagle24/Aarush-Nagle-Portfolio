@@ -15,7 +15,6 @@ export default function ProjectsSection() {
           id="projects-heading"
           eyebrow="Selected Projects"
           title="Selected Projects"
-          subtitle="Software built for real users, real problems, and sometimes millions of players."
         />
         <div className="project-layout">
           <ProjectCard project={featuredProject} featured />
