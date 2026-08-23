@@ -174,7 +174,7 @@ export const education = [
     credential: 'B.S. in Computer Science',
     period: 'August 2024 - May 2028',
     gpa: '3.92 / 4.0',
-    image: asset('images/uva-logo.svg'),
+    image: asset('images/uva-logo.jpg'),
     imageAlt: 'University of Virginia logo',
     featured: true,
   },
