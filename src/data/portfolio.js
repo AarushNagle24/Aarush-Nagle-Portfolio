@@ -174,8 +174,8 @@ export const education = [
     credential: 'B.S. in Computer Science',
     period: 'August 2024 - May 2028',
     gpa: '3.92 / 4.0',
-    image: asset('images/uva-rotunda.jpg'),
-    imageAlt: 'The Rotunda at the University of Virginia',
+    image: asset('images/uva-logo.svg'),
+    imageAlt: 'University of Virginia logo',
     featured: true,
   },
   {
@@ -184,8 +184,8 @@ export const education = [
     credential: 'Advanced Diploma',
     period: 'August 2020 - June 2024',
     gpa: '4.47',
-    image: asset('images/oakton-high-school.jpg'),
-    imageAlt: 'Oakton High School main entrance',
+    image: asset('images/oakton-logo.png'),
+    imageAlt: 'Oakton High School seal',
   },
 ];
 
