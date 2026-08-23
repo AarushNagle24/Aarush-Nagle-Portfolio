@@ -931,9 +931,9 @@
 .education-card-featured .education-image {
   position: absolute;
   inset: 0;
-  width: auto;
+  width: 100%;
   height: 100%;
-  max-width: 100%;
+  max-width: none;
   margin: auto;
   object-fit: contain;
   filter: none;
