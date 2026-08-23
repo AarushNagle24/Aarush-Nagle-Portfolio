@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { Github, Menu, Moon, Sun, X } from 'lucide-react';
+import { Menu, Moon, Sun, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { navLinks, socials } from '../data/portfolio.js';
+import GitHubCircleIcon from './GitHubCircleIcon.jsx';
 import LinkedInBoxIcon from './LinkedInBoxIcon.jsx';
 
 export default function Navbar({ theme, onToggleTheme }) {
@@ -39,7 +40,7 @@ export default function Navbar({ theme, onToggleTheme }) {
 
       <div className="nav-actions">
         <a className="icon-button" href={socials.github} target="_blank" rel="noreferrer" aria-label="GitHub">
-          <Github size={18} aria-hidden="true" />
+          <GitHubCircleIcon size={18} />
         </a>
         <a
           className="icon-button"

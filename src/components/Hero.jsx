@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, ArrowRight, Github, Map, Sparkles, TerminalSquare } from 'lucide-react';
-import { heroMetrics, socials } from '../data/portfolio.js';
+import { ArrowDown, ArrowRight, Map, Sparkles, TerminalSquare } from 'lucide-react';
+import { socials } from '../data/portfolio.js';
+import GitHubCircleIcon from './GitHubCircleIcon.jsx';
 import LinkedInBoxIcon from './LinkedInBoxIcon.jsx';
-import MetricCard from './MetricCard.jsx';
 
 export default function Hero() {
   return (
@@ -33,12 +33,6 @@ export default function Hero() {
           Third-year Computer Science student at the University of Virginia.
         </motion.p>
 
-        <div className="hero-metrics" aria-label="Portfolio metrics">
-          {heroMetrics.map((metric, index) => (
-            <MetricCard key={metric.label} metric={metric} delay={0.12 + index * 0.08} />
-          ))}
-        </div>
-
         <motion.div
           className="hero-actions"
           initial={{ opacity: 0, y: 20 }}
@@ -50,7 +44,7 @@ export default function Hero() {
             <ArrowRight size={18} aria-hidden="true" />
           </a>
           <a className="button button-secondary" href={socials.github} target="_blank" rel="noreferrer">
-            <Github size={18} aria-hidden="true" />
+            <GitHubCircleIcon size={18} />
             GitHub
           </a>
           <a className="button button-secondary" href={socials.linkedin} target="_blank" rel="noreferrer">
@@ -75,7 +69,6 @@ export default function Hero() {
           </div>
           <TerminalSquare size={22} />
           <code>route = dijkstra(uva_map)</code>
-          <code>players += 180_000_000</code>
         </div>
         <div className="visual-pane map-pane">
           <Map size={22} />
@@ -93,10 +86,6 @@ export default function Hero() {
           <span />
           <span />
           <span />
-        </div>
-        <div className="visual-stat">
-          <strong>50M+</strong>
-          <span>players reached</span>
         </div>
       </motion.div>
 

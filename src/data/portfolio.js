@@ -14,12 +14,6 @@ export const navLinks = [
   { label: 'Skills', href: '#skills' },
 ];
 
-export const heroMetrics = [
-  { value: 180, suffix: 'M+', label: 'Tower of Easy Plays' },
-  { value: 50, suffix: 'M+', label: 'Players Reached' },
-  { value: 3.92, suffix: '', label: 'UVA GPA', decimals: 2 },
-];
-
 export const experiences = [
   {
     id: 'xon-studios',
@@ -30,8 +24,8 @@ export const experiences = [
     period: 'March 2021 - Present',
     link: 'https://www.roblox.com/communities/9895654/XON-Studios',
     linkLabel: 'View Roblox Community',
-    image: asset('images/xon-studios-mark.svg'),
-    fallbackImage: asset('images/xon-studios-mark.svg'),
+    image: asset('images/xon-studios.png'),
+    fallbackImage: asset('images/xon-fallback.svg'),
     description:
       'Founded XON Studios, an independent Roblox development studio whose games have reached 190+ million plays and more than 50 million players worldwide.',
     highlights: [

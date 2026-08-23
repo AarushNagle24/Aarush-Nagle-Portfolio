@@ -1,5 +1,6 @@
-import { Github, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { socials } from '../data/portfolio.js';
+import GitHubCircleIcon from './GitHubCircleIcon.jsx';
 import GlassCard from './GlassCard.jsx';
 import LinkedInBoxIcon from './LinkedInBoxIcon.jsx';
 
@@ -25,7 +26,7 @@ export default function Contact() {
               LinkedIn
             </a>
             <a className="button button-secondary" href={socials.github} target="_blank" rel="noreferrer">
-              <Github size={18} aria-hidden="true" />
+              <GitHubCircleIcon size={18} />
               GitHub
             </a>
           </div>

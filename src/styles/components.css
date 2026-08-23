@@ -185,6 +185,19 @@
   transform: translateY(-1px);
 }
 
+.github-circle-icon {
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1.7px solid currentColor;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.github-circle-icon svg {
+  stroke-width: 2.5;
+}
+
 .menu-toggle {
   display: none;
 }
@@ -256,41 +269,6 @@
   font-size: 1.12rem;
 }
 
-.hero-metrics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin: 30px 0;
-}
-
-.metric-card {
-  min-height: 116px;
-  padding: 20px;
-  border: 1px solid var(--glass-border);
-  border-radius: 8px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.15), transparent 64%),
-    var(--surface);
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
-}
-
-.metric-card strong {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--text-strong);
-  font-size: 2rem;
-  font-weight: 820;
-  line-height: 1;
-}
-
-.metric-card span {
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 650;
-}
-
 .hero-actions,
 .project-actions,
 .contact-actions {
@@ -347,7 +325,6 @@
 }
 
 .visual-pane,
-.visual-stat,
 .tower-stack span {
   border: 1px solid var(--glass-border);
   border-radius: 8px;
@@ -491,34 +468,6 @@
 
 .tower-stack span:nth-child(3) {
   transform: translateX(28px);
-}
-
-.visual-stat {
-  position: absolute;
-  z-index: 3;
-  bottom: 22px;
-  left: 88px;
-  width: 222px;
-  padding: 20px;
-  animation: floatB 12s ease-in-out infinite reverse;
-}
-
-.visual-stat strong,
-.visual-stat span {
-  display: block;
-}
-
-.visual-stat strong {
-  color: var(--text-strong);
-  font-size: 2.15rem;
-  line-height: 1;
-}
-
-.visual-stat span {
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 0.95rem;
-  font-weight: 650;
 }
 
 .scroll-indicator {
@@ -1233,10 +1182,6 @@
     right: 14%;
   }
 
-  .visual-stat {
-    left: 22%;
-  }
-
   .experience-card,
   .experience-card-featured,
   .project-card-featured {
@@ -1293,14 +1238,8 @@
     font-size: 1rem;
   }
 
-  .hero-metrics,
   .project-grid {
     grid-template-columns: 1fr;
-  }
-
-  .metric-card {
-    min-height: 96px;
-    padding: 18px;
   }
 
   .hero-actions,
@@ -1346,8 +1285,7 @@
     height: 38px;
   }
 
-  .ai-pane,
-  .visual-stat {
+  .ai-pane {
     display: none;
   }
 
@@ -1463,7 +1401,6 @@
 @media (prefers-reduced-motion: reduce) {
   .ambient-gradient,
   .visual-pane,
-  .visual-stat,
   .tower-stack,
   .scroll-indicator {
     animation: none !important;
