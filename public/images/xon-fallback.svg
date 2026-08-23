@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">XON Studios fallback thumbnail</title>
+  <desc id="desc">Abstract studio mark with block geometry and XON Studios text.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#23d3e7"/>
+      <stop offset="1" stop-color="#56a8ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="900" fill="url(#bg)"/>
+  <path d="M268 165h145l77 102 76-102h145L563 365l164 240H582l-94-132-94 132H249l164-240L268 165Zm101 73 83 113-86 124h42l82-116 83 116h42l-86-124 83-113h-42l-80 106-79-106h-42Z" fill="#111827"/>
+  <text x="450" y="720" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="82" font-weight="800" letter-spacing="6" fill="#111827">XON STUDIOS</text>
+</svg>

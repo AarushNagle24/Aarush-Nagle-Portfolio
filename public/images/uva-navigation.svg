@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">UVA Navigation project thumbnail</title>
+  <desc id="desc">A stylized campus map with two pins connected by a glowing walking route.</desc>
+  <defs>
+    <linearGradient id="mapBg" x1="84" y1="50" x2="1118" y2="712" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f9fbff"/>
+      <stop offset=".54" stop-color="#d8e6fb"/>
+      <stop offset="1" stop-color="#c9d9ef"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="185" y1="113" x2="1018" y2="645" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity=".76"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".34"/>
+    </linearGradient>
+    <linearGradient id="route" x1="338" y1="507" x2="848" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff8f52"/>
+      <stop offset=".52" stop-color="#32c7ff"/>
+      <stop offset="1" stop-color="#7c5cff"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#3a5578" flood-opacity=".2"/>
+    </filter>
+    <filter id="routeGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.18 0 0 0 0 0.63 0 0 0 0 1 0 0 0 .58 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#mapBg)"/>
+  <path d="M0 117c164-82 274 44 445 3 215-52 325-151 527-78 112 40 172 126 228 225v483H0V117Z" fill="#ffffff" opacity=".38"/>
+  <path d="M0 574c123-53 219-29 336 19 151 62 318 75 481-30 140-91 263-113 383-58v245H0V574Z" fill="#7095c9" opacity=".14"/>
+  <g opacity=".26" stroke="#5b789e" stroke-width="2">
+    <path d="M0 125h1200M0 249h1200M0 374h1200M0 499h1200M0 623h1200"/>
+    <path d="M118 0v750M290 0v750M462 0v750M634 0v750M806 0v750M978 0v750"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="132" y="90" width="936" height="570" rx="34" fill="url(#panel)" stroke="#fff" stroke-opacity=".72"/>
+    <rect x="157" y="116" width="886" height="520" rx="24" fill="#edf4ff" opacity=".5"/>
+  </g>
+  <g fill="#fff" stroke="#b8c7d8" stroke-width="2" opacity=".9">
+    <rect x="226" y="194" width="142" height="82" rx="8"/>
+    <rect x="414" y="159" width="172" height="92" rx="8"/>
+    <rect x="691" y="153" width="132" height="100" rx="8"/>
+    <rect x="858" y="227" width="104" height="84" rx="8"/>
+    <rect x="246" y="386" width="184" height="88" rx="8"/>
+    <rect x="515" y="383" width="142" height="112" rx="8"/>
+    <rect x="743" y="438" width="178" height="96" rx="8"/>
+  </g>
+  <g stroke="#bdcce0" stroke-width="28" stroke-linecap="round" opacity=".72">
+    <path d="M193 333c122-30 193-21 305 11 108 30 218 23 332-70"/>
+    <path d="M397 598c58-90 101-151 186-184 81-31 155-22 287-12"/>
+    <path d="M228 553c154-89 206-147 228-313"/>
+  </g>
+  <path d="M332 501c74-68 132-116 208-118 89-3 128 62 208 10 60-39 70-110 127-151" fill="none" stroke="#14243a" stroke-width="24" stroke-linecap="round" opacity=".12"/>
+  <path d="M332 501c74-68 132-116 208-118 89-3 128 62 208 10 60-39 70-110 127-151" fill="none" stroke="url(#route)" stroke-width="13" stroke-linecap="round" filter="url(#routeGlow)"/>
+  <g>
+    <circle cx="332" cy="501" r="58" fill="#ff8f52" opacity=".18"/>
+    <path d="M332 421c-38 0-69 30-69 68 0 50 69 133 69 133s69-83 69-133c0-38-31-68-69-68Z" fill="#ff8f52"/>
+    <circle cx="332" cy="489" r="23" fill="#fff"/>
+    <circle cx="875" cy="242" r="58" fill="#715cff" opacity=".18"/>
+    <path d="M875 162c-38 0-69 30-69 68 0 50 69 133 69 133s69-83 69-133c0-38-31-68-69-68Z" fill="#715cff"/>
+    <circle cx="875" cy="230" r="23" fill="#fff"/>
+  </g>
+  <g transform="translate(205 136)">
+    <rect width="238" height="58" rx="29" fill="#ffffff" fill-opacity=".7" stroke="#ffffff"/>
+    <circle cx="31" cy="29" r="10" fill="#ff8f52"/>
+    <text x="55" y="37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="24" font-weight="700" fill="#1a2535">UVA Navigation</text>
+  </g>
+  <g transform="translate(773 548)">
+    <rect width="185" height="44" rx="22" fill="#12243a" fill-opacity=".86"/>
+    <text x="22" y="29" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="18" font-weight="650" fill="#ffffff">5 min search</text>
+  </g>
+</svg>
