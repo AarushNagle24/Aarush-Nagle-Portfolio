@@ -1,75 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
-  <title id="title">UVA Navigation project thumbnail</title>
-  <desc id="desc">A stylized campus map with two pins connected by a glowing walking route.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">UVA Campus Navigation project thumbnail</title>
+  <desc id="desc">A colorful campus map with a rotunda landmark, route line, and navigation pins.</desc>
   <defs>
-    <linearGradient id="mapBg" x1="84" y1="50" x2="1118" y2="712" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#f9fbff"/>
-      <stop offset=".54" stop-color="#d8e6fb"/>
-      <stop offset="1" stop-color="#c9d9ef"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff4e5"/>
+      <stop offset=".48" stop-color="#f1f7ff"/>
+      <stop offset="1" stop-color="#cfe3d2"/>
     </linearGradient>
-    <linearGradient id="panel" x1="185" y1="113" x2="1018" y2="645" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ffffff" stop-opacity=".76"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity=".34"/>
+    <linearGradient id="paper" x1="175" y1="93" x2="1030" y2="658" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f5f0df"/>
     </linearGradient>
-    <linearGradient id="route" x1="338" y1="507" x2="848" y2="232" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ff8f52"/>
-      <stop offset=".52" stop-color="#32c7ff"/>
-      <stop offset="1" stop-color="#7c5cff"/>
+    <linearGradient id="route" x1="279" y1="540" x2="890" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e57200"/>
+      <stop offset=".45" stop-color="#1f7a5b"/>
+      <stop offset="1" stop-color="#232d4b"/>
     </linearGradient>
-    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#3a5578" flood-opacity=".2"/>
+    <filter id="shadow" x="-16%" y="-18%" width="132%" height="136%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#24324a" flood-opacity=".22"/>
     </filter>
-    <filter id="routeGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.18 0 0 0 0 0.63 0 0 0 0 1 0 0 0 .58 0"/>
+    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 .9 0 0 0 0 .45 0 0 0 0 0 0 0 0 .48 0"/>
       <feMerge>
         <feMergeNode/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
   </defs>
-  <rect width="1200" height="750" fill="url(#mapBg)"/>
-  <path d="M0 117c164-82 274 44 445 3 215-52 325-151 527-78 112 40 172 126 228 225v483H0V117Z" fill="#ffffff" opacity=".38"/>
-  <path d="M0 574c123-53 219-29 336 19 151 62 318 75 481-30 140-91 263-113 383-58v245H0V574Z" fill="#7095c9" opacity=".14"/>
-  <g opacity=".26" stroke="#5b789e" stroke-width="2">
-    <path d="M0 125h1200M0 249h1200M0 374h1200M0 499h1200M0 623h1200"/>
-    <path d="M118 0v750M290 0v750M462 0v750M634 0v750M806 0v750M978 0v750"/>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <path d="M0 100c155-47 262 37 418 15 197-28 311-124 501-67 133 40 208 127 281 238v464H0V100Z" fill="#ffffff" opacity=".44"/>
+  <path d="M0 607c146-88 260-62 402-11 176 64 318 42 469-44 139-80 238-91 329-45v243H0V607Z" fill="#234b31" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <path d="M142 105h916c25 0 45 20 45 45v448c0 25-20 45-45 45H142c-25 0-45-20-45-45V150c0-25 20-45 45-45Z" fill="url(#paper)"/>
+    <path d="M184 142h832c22 0 40 18 40 40v383c0 22-18 40-40 40H184c-22 0-40-18-40-40V182c0-22 18-40 40-40Z" fill="#fff9ec" opacity=".7"/>
   </g>
-  <g filter="url(#softShadow)">
-    <rect x="132" y="90" width="936" height="570" rx="34" fill="url(#panel)" stroke="#fff" stroke-opacity=".72"/>
-    <rect x="157" y="116" width="886" height="520" rx="24" fill="#edf4ff" opacity=".5"/>
+  <g opacity=".32" stroke="#9ab1a3" stroke-width="3">
+    <path d="M144 244h912M144 364h912M144 484h912"/>
+    <path d="M290 142v463M444 142v463M598 142v463M752 142v463M906 142v463"/>
   </g>
-  <g fill="#fff" stroke="#b8c7d8" stroke-width="2" opacity=".9">
-    <rect x="226" y="194" width="142" height="82" rx="8"/>
-    <rect x="414" y="159" width="172" height="92" rx="8"/>
-    <rect x="691" y="153" width="132" height="100" rx="8"/>
-    <rect x="858" y="227" width="104" height="84" rx="8"/>
-    <rect x="246" y="386" width="184" height="88" rx="8"/>
-    <rect x="515" y="383" width="142" height="112" rx="8"/>
-    <rect x="743" y="438" width="178" height="96" rx="8"/>
+  <g fill="#ffffff" stroke="#c8d2c8" stroke-width="3">
+    <rect x="216" y="208" width="154" height="72" rx="10"/>
+    <rect x="423" y="184" width="134" height="90" rx="10"/>
+    <rect x="768" y="175" width="160" height="86" rx="10"/>
+    <rect x="246" y="416" width="206" height="84" rx="10"/>
+    <rect x="596" y="427" width="150" height="96" rx="10"/>
+    <rect x="820" y="414" width="118" height="78" rx="10"/>
   </g>
-  <g stroke="#bdcce0" stroke-width="28" stroke-linecap="round" opacity=".72">
-    <path d="M193 333c122-30 193-21 305 11 108 30 218 23 332-70"/>
-    <path d="M397 598c58-90 101-151 186-184 81-31 155-22 287-12"/>
-    <path d="M228 553c154-89 206-147 228-313"/>
+  <g stroke="#c8ad7f" stroke-width="28" stroke-linecap="round" opacity=".5">
+    <path d="M180 335c119-52 221-53 356 2 121 49 231 38 356-55"/>
+    <path d="M326 571c56-92 116-151 219-170 96-18 185 7 332 8"/>
+    <path d="M262 556c97-93 148-208 154-347"/>
   </g>
-  <path d="M332 501c74-68 132-116 208-118 89-3 128 62 208 10 60-39 70-110 127-151" fill="none" stroke="#14243a" stroke-width="24" stroke-linecap="round" opacity=".12"/>
-  <path d="M332 501c74-68 132-116 208-118 89-3 128 62 208 10 60-39 70-110 127-151" fill="none" stroke="url(#route)" stroke-width="13" stroke-linecap="round" filter="url(#routeGlow)"/>
+  <path d="M279 537c63-91 127-130 210-117 87 14 112 86 197 52 83-34 95-154 204-238" fill="none" stroke="#0e1b2c" stroke-width="24" stroke-linecap="round" opacity=".12"/>
+  <path d="M279 537c63-91 127-130 210-117 87 14 112 86 197 52 83-34 95-154 204-238" fill="none" stroke="url(#route)" stroke-width="15" stroke-linecap="round" filter="url(#glow)"/>
+  <g transform="translate(506 209)" filter="url(#shadow)">
+    <path d="M96 0 205 58H-13L96 0Z" fill="#e57200"/>
+    <rect x="13" y="58" width="166" height="26" fill="#232d4b"/>
+    <g fill="#ffffff">
+      <rect x="24" y="84" width="20" height="110"/>
+      <rect x="62" y="84" width="20" height="110"/>
+      <rect x="100" y="84" width="20" height="110"/>
+      <rect x="138" y="84" width="20" height="110"/>
+    </g>
+    <rect x="0" y="194" width="192" height="30" fill="#232d4b"/>
+  </g>
   <g>
-    <circle cx="332" cy="501" r="58" fill="#ff8f52" opacity=".18"/>
-    <path d="M332 421c-38 0-69 30-69 68 0 50 69 133 69 133s69-83 69-133c0-38-31-68-69-68Z" fill="#ff8f52"/>
-    <circle cx="332" cy="489" r="23" fill="#fff"/>
-    <circle cx="875" cy="242" r="58" fill="#715cff" opacity=".18"/>
-    <path d="M875 162c-38 0-69 30-69 68 0 50 69 133 69 133s69-83 69-133c0-38-31-68-69-68Z" fill="#715cff"/>
-    <circle cx="875" cy="230" r="23" fill="#fff"/>
-  </g>
-  <g transform="translate(205 136)">
-    <rect width="238" height="58" rx="29" fill="#ffffff" fill-opacity=".7" stroke="#ffffff"/>
-    <circle cx="31" cy="29" r="10" fill="#ff8f52"/>
-    <text x="55" y="37" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="24" font-weight="700" fill="#1a2535">UVA Navigation</text>
-  </g>
-  <g transform="translate(773 548)">
-    <rect width="185" height="44" rx="22" fill="#12243a" fill-opacity=".86"/>
-    <text x="22" y="29" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="18" font-weight="650" fill="#ffffff">5 min search</text>
+    <circle cx="279" cy="537" r="58" fill="#e57200" opacity=".18"/>
+    <path d="M279 451c-42 0-76 34-76 76 0 55 76 143 76 143s76-88 76-143c0-42-34-76-76-76Z" fill="#e57200"/>
+    <circle cx="279" cy="526" r="24" fill="#fff"/>
+    <circle cx="890" cy="234" r="58" fill="#232d4b" opacity=".18"/>
+    <path d="M890 148c-42 0-76 34-76 76 0 55 76 143 76 143s76-88 76-143c0-42-34-76-76-76Z" fill="#232d4b"/>
+    <circle cx="890" cy="223" r="24" fill="#fff"/>
   </g>
 </svg>
