@@ -13,8 +13,8 @@ export default function ProjectsSection() {
       <div className="section-shell">
         <SectionHeader
           id="projects-heading"
-          eyebrow="Selected Projects"
-          title="Selected Projects"
+          eyebrow="Projects"
+          title="Projects"
         />
         <div className="project-layout">
           <ProjectCard project={featuredProject} featured />
@@ -54,23 +54,8 @@ function ProjectCard({ project, featured = false }) {
           <span>{project.date}</span>
         </div>
         <h3>{project.title}</h3>
-        {project.metrics?.length ? (
-          <div className="project-metrics">
-            {project.metrics.map((metric) => (
-              <span key={metric}>{metric}</span>
-            ))}
-          </div>
-        ) : null}
-        <p>{project.description}</p>
-        <div className="chip-row">
-          {project.technologies.map((technology) => (
-            <span className="chip" key={technology}>
-              {technology}
-            </span>
-          ))}
-        </div>
         <ul className="feature-list">
-          {project.features.slice(0, featured ? 9 : 4).map((feature) => (
+          {project.features.map((feature) => (
             <li key={feature}>{feature}</li>
           ))}
         </ul>

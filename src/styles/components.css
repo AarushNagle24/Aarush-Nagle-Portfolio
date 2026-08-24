@@ -651,16 +651,14 @@
   color: var(--text-strong);
 }
 
-.stat-row,
-.project-metrics {
+.stat-row {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin: 18px 0;
 }
 
-.stat-row span,
-.project-metrics span {
+.stat-row span {
   padding: 9px 12px;
   border: 1px solid var(--glass-border);
   border-radius: 999px;
@@ -1376,7 +1374,6 @@
   }
 
   .stat-row span,
-  .project-metrics span,
   .chip,
   .course-item,
   .course-title {
