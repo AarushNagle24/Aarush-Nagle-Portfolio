@@ -7,4 +7,13 @@ export default defineConfig(({ command }) => ({
     command === 'build'
       ? process.env.VITE_BASE_PATH || '/Aarush-Nagle-Portfolio/'
       : '/',
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/index.js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name][extname]',
+      },
+    },
+  },
 }));

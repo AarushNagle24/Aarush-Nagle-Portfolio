@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Gavel and Quill internship thumbnail</title>
+  <desc id="desc">A polished browser-window visual representing dashboards, AI courses, and mapping tools.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="40" x2="1143" y2="754" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f9fbff"/>
+      <stop offset=".5" stop-color="#edf2f7"/>
+      <stop offset="1" stop-color="#dce6ef"/>
+    </linearGradient>
+    <linearGradient id="browser" x1="161" y1="98" x2="1021" y2="667" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".4"/>
+    </linearGradient>
+    <filter id="shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#526170" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <path d="M0 160c154-65 270-24 412 38 169 74 340 14 480-50 135-62 222-50 308 13v589H0V160Z" fill="#d8e4ef" opacity=".52"/>
+  <g filter="url(#shadow)">
+    <rect x="125" y="96" width="950" height="558" rx="32" fill="url(#browser)" stroke="#fff"/>
+    <path d="M125 153h950" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="174" cy="125" r="10" fill="#ff8f8f"/>
+    <circle cx="207" cy="125" r="10" fill="#ffd479"/>
+    <circle cx="240" cy="125" r="10" fill="#72d38a"/>
+    <rect x="296" y="110" width="490" height="31" rx="15.5" fill="#eef3f8"/>
+  </g>
+  <g transform="translate(181 206)">
+    <rect width="270" height="332" rx="12" fill="#ffffff" fill-opacity=".78" stroke="#ffffff"/>
+    <rect x="28" y="34" width="116" height="16" rx="8" fill="#223044" opacity=".82"/>
+    <rect x="28" y="75" width="214" height="14" rx="7" fill="#9aacbf" opacity=".72"/>
+    <rect x="28" y="105" width="188" height="14" rx="7" fill="#9aacbf" opacity=".46"/>
+    <path d="M34 276c34-48 60-68 89-46 24 18 41 46 81 9 13-12 27-22 40-29v76H34Z" fill="#7dd3fc" opacity=".7"/>
+    <path d="M34 286h208" stroke="#2d465f" stroke-width="3" opacity=".22"/>
+    <text x="28" y="169" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="28" font-weight="750" fill="#1f2937">Budget</text>
+    <text x="28" y="204" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="650" fill="#64748b">Streamlit + Pandas</text>
+  </g>
+  <g transform="translate(486 206)">
+    <rect width="270" height="332" rx="12" fill="#ffffff" fill-opacity=".78" stroke="#ffffff"/>
+    <circle cx="135" cy="111" r="62" fill="#a78bfa" opacity=".18"/>
+    <path d="M135 55 151 94l42 9-36 23 6 43-28-23-37 23 14-43-36-23 42-9 17-39Z" fill="#8b5cf6"/>
+    <rect x="46" y="208" width="178" height="18" rx="9" fill="#223044" opacity=".8"/>
+    <rect x="46" y="245" width="128" height="14" rx="7" fill="#9aacbf" opacity=".72"/>
+    <rect x="46" y="275" width="158" height="14" rx="7" fill="#9aacbf" opacity=".46"/>
+    <text x="46" y="185" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="24" font-weight="750" fill="#1f2937">AI Training</text>
+  </g>
+  <g transform="translate(791 206)">
+    <rect width="228" height="332" rx="12" fill="#ffffff" fill-opacity=".78" stroke="#ffffff"/>
+    <rect x="28" y="35" width="172" height="214" rx="10" fill="#e5f2ed"/>
+    <g stroke="#8bb9a2" stroke-width="8" stroke-linecap="round" opacity=".75">
+      <path d="M46 91c34-14 61-10 93 8 22 13 40 13 59-2"/>
+      <path d="M53 169c33-22 67-27 104-13 14 5 27 12 40 20"/>
+      <path d="M107 50c-8 56-10 109-5 177"/>
+    </g>
+    <path d="M71 198c33-43 65-72 106-98" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="71" cy="198" r="15" fill="#f97316"/>
+    <circle cx="177" cy="100" r="15" fill="#2563eb"/>
+    <text x="28" y="294" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="23" font-weight="750" fill="#1f2937">Mapping Tool</text>
+  </g>
+  <g transform="translate(182 573)">
+    <rect width="311" height="44" rx="22" fill="#12243a" fill-opacity=".88"/>
+    <text x="24" y="29" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="18" font-weight="700" fill="#fff">Gavel and Quill Internship</text>
+  </g>
+</svg>
