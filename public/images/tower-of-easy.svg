@@ -3,13 +3,14 @@
   <desc id="desc">A minimal abstract vertical tower cutaway with obstacle stages inside.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ecfeff"/>
-      <stop offset=".52" stop-color="#eef2ff"/>
-      <stop offset="1" stop-color="#fff7ed"/>
+      <stop stop-color="#064e3b"/>
+      <stop offset=".48" stop-color="#155e75"/>
+      <stop offset="1" stop-color="#312e81"/>
     </linearGradient>
     <linearGradient id="glass" x1="384" y1="63" x2="819" y2="684" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ffffff" stop-opacity=".86"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity=".42"/>
+      <stop stop-color="#0f766e" stop-opacity=".88"/>
+      <stop offset=".52" stop-color="#164e63" stop-opacity=".78"/>
+      <stop offset="1" stop-color="#1e1b4b" stop-opacity=".82"/>
     </linearGradient>
     <linearGradient id="route" x1="508" y1="622" x2="725" y2="123" gradientUnits="userSpaceOnUse">
       <stop stop-color="#ef4444"/>
@@ -30,17 +31,17 @@
     </filter>
   </defs>
   <rect width="1200" height="750" fill="url(#bg)"/>
-  <circle cx="174" cy="146" r="110" fill="#22d3ee" opacity=".12"/>
-  <circle cx="992" cy="136" r="130" fill="#fb923c" opacity=".15"/>
-  <circle cx="1016" cy="610" r="166" fill="#8b5cf6" opacity=".1"/>
-  <path d="M0 596c132-57 249-43 382 15 154 67 292 47 451-40 145-80 262-87 367-23v202H0V596Z" fill="#64748b" opacity=".08"/>
-  <g opacity=".22" stroke="#94a3b8" stroke-width="2">
+  <circle cx="174" cy="146" r="110" fill="#22d3ee" opacity=".18"/>
+  <circle cx="992" cy="136" r="130" fill="#f97316" opacity=".18"/>
+  <circle cx="1016" cy="610" r="166" fill="#a78bfa" opacity=".13"/>
+  <path d="M0 596c132-57 249-43 382 15 154 67 292 47 451-40 145-80 262-87 367-23v202H0V596Z" fill="#67e8f9" opacity=".08"/>
+  <g opacity=".28" stroke="#67e8f9" stroke-width="2">
     <path d="M126 153h948M126 279h948M126 405h948M126 531h948"/>
     <path d="M264 88v574M444 88v574M624 88v574M804 88v574M984 88v574"/>
   </g>
   <g filter="url(#shadow)">
-    <path d="M420 72h360c32 0 58 26 58 58v492c0 32-26 58-58 58H420c-32 0-58-26-58-58V130c0-32 26-58 58-58Z" fill="url(#glass)" stroke="#ffffff" stroke-opacity=".82"/>
-    <path d="M459 110h282c22 0 40 18 40 40v452c0 22-18 40-40 40H459c-22 0-40-18-40-40V150c0-22 18-40 40-40Z" fill="#0f172a" opacity=".07"/>
+    <path d="M420 72h360c32 0 58 26 58 58v492c0 32-26 58-58 58H420c-32 0-58-26-58-58V130c0-32 26-58 58-58Z" fill="url(#glass)" stroke="#67e8f9" stroke-opacity=".48"/>
+    <path d="M459 110h282c22 0 40 18 40 40v452c0 22-18 40-40 40H459c-22 0-40-18-40-40V150c0-22 18-40 40-40Z" fill="#e0f2fe" opacity=".12"/>
   </g>
   <g opacity=".88">
     <rect x="455" y="136" width="290" height="48" rx="15" fill="#8b5cf6"/>
