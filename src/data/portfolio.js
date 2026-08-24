@@ -89,7 +89,7 @@ export const projects = [
     category: 'Roblox Game',
     date: 'Live March 2021 - Present',
     image: asset('images/tower-of-easy.png'),
-    fallbackImage: asset('images/tower-of-easy.svg'),
+    fallbackImage: asset('images/tower-of-easy.png'),
     alt: 'Tower of Easy Roblox game thumbnail',
     live: 'https://www.roblox.com/games/6496227852/Tower-of-Easy',
     features: [
