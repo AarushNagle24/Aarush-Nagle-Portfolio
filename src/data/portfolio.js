@@ -183,7 +183,6 @@ export const coursework = {
     'CS 4771 - Reinforcement Learning',
     'CS 3120 - Discrete Math & Theory 2',
     'CS 4710 - Artificial Intelligence',
-    'CS 4774 - Machine Learning',
   ],
 };
 
