@@ -190,7 +190,7 @@ export const coursework = {
 export const skillGroups = [
   {
     title: 'Languages',
-    items: ['Java', 'Python', 'C', 'Lua'],
+    items: ['Java', 'Python', 'Lua', 'C'],
   },
   {
     title: 'AI / Data',
