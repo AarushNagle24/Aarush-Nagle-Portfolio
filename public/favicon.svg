@@ -12,6 +12,9 @@
   </defs>
   <rect width="64" height="64" rx="14" fill="url(#bg)"/>
   <rect x="4" y="4" width="56" height="56" rx="11" fill="none" stroke="#ffffff" stroke-opacity=".64"/>
-  <path d="M17 45 28 18h6l11 27h-7l-2-5H26l-2 5h-7Zm11-11h6l-3-8-3 8Z" fill="url(#ink)"/>
-  <path d="M47 18v27h-6L30 30v15h-6V18h6l11 15V18h6Z" fill="url(#ink)" opacity=".9"/>
+  <g fill="none" stroke="url(#ink)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.4">
+    <path d="M14 46 23 19 32 46"/>
+    <path d="M18 37h10"/>
+    <path d="M41 46V19l12 27V19"/>
+  </g>
 </svg>
