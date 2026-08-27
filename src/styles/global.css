@@ -110,7 +110,7 @@ button {
 
 .section {
   position: relative;
-  padding: var(--section-spacing) 0;
+  padding: 0 0 var(--section-spacing);
 }
 
 .section-shell {
@@ -194,10 +194,6 @@ ul {
 
   html {
     scroll-padding-top: 90px;
-  }
-
-  .section {
-    padding: var(--section-spacing) 0;
   }
 
   .section-shell {

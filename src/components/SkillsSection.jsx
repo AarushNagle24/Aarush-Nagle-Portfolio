@@ -14,7 +14,7 @@ export default function SkillsSection() {
   return (
     <section className="section" id="skills" aria-labelledby="skills-heading">
       <div className="section-shell">
-        <SectionHeader id="skills-heading" eyebrow="Skills" title="Tools I Build With" />
+        <SectionHeader id="skills-heading" eyebrow="Skills" title="Skills" />
         <div className="skills-grid">
           {skillGroups.map((group) => {
             const Icon = icons[group.title] || Code2;

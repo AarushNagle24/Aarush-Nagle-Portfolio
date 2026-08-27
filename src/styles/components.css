@@ -331,7 +331,6 @@
   aspect-ratio: 16 / 10;
   place-items: center;
   overflow: hidden;
-  padding: 10px;
   border: 1px solid var(--glass-border);
   border-radius: 8px;
   background:
@@ -345,7 +344,7 @@
 .hero-float img {
   width: 100%;
   height: 100%;
-  border-radius: 6px;
+  border-radius: inherit;
   object-fit: cover;
 }
 
@@ -1193,10 +1192,6 @@
   .hero-visual {
     min-height: 410px;
     overflow: hidden;
-  }
-
-  .hero-float {
-    padding: 8px;
   }
 
   .hero-thumb-tower {
