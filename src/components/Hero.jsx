@@ -48,7 +48,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, delay: 0.18 }}
         >
-          Third-year Computer Science student at the University of Virginia.
+          Third-year Computer Science student at the University of Virginia
         </motion.p>
 
         <motion.div
