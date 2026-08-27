@@ -1,8 +1,26 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, ArrowRight, Map, Sparkles, TerminalSquare } from 'lucide-react';
-import { socials } from '../data/portfolio.js';
+import { ArrowDown, ArrowRight } from 'lucide-react';
+import { projects, socials } from '../data/portfolio.js';
 import GitHubCircleIcon from './GitHubCircleIcon.jsx';
 import LinkedInBoxIcon from './LinkedInBoxIcon.jsx';
+
+const heroAsset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
+const heroTiles = [
+  { className: 'hero-thumb-tower', src: projects[0].image, fallback: projects[0].fallbackImage },
+  { className: 'hero-thumb-uva', src: projects[1].image, fallback: projects[1].fallbackImage },
+  { className: 'hero-thumb-auto', src: projects[2].image, fallback: projects[2].fallbackImage },
+  {
+    className: 'hero-thumb-code',
+    src: heroAsset('images/hello-world-code.svg'),
+    fallback: heroAsset('images/hello-world-code.svg'),
+  },
+  {
+    className: 'hero-thumb-game',
+    src: heroAsset('images/game-development.svg'),
+    fallback: heroAsset('images/game-development.svg'),
+  },
+];
 
 export default function Hero() {
   return (
@@ -61,32 +79,19 @@ export default function Hero() {
         transition={{ duration: 0.7, delay: 0.2 }}
         aria-hidden="true"
       >
-        <div className="visual-pane code-pane">
-          <div className="window-dots">
-            <span />
-            <span />
-            <span />
+        {heroTiles.map((tile) => (
+          <div className={`hero-float ${tile.className}`} key={tile.className}>
+            <img
+              src={tile.src}
+              onError={(event) => {
+                event.currentTarget.onerror = null;
+                event.currentTarget.src = tile.fallback;
+              }}
+              alt=""
+              loading="eager"
+            />
           </div>
-          <TerminalSquare size={22} />
-          <code>route = dijkstra(uva_map)</code>
-        </div>
-        <div className="visual-pane map-pane">
-          <Map size={22} />
-          <div className="map-line" />
-          <span className="map-pin pin-a" />
-          <span className="map-pin pin-b" />
-        </div>
-        <div className="visual-pane ai-pane">
-          <Sparkles size={22} />
-          <strong>CLIP + BLIP</strong>
-          <span>smart albums</span>
-        </div>
-        <div className="tower-stack">
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
+        ))}
       </motion.div>
 
       <a className="scroll-indicator" href="#experience" aria-label="Scroll to experience">

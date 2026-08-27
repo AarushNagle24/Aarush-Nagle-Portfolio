@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Game development thumbnail</title>
+  <desc id="desc">A minimal abstract game controller and platform-building scene.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1f2937"/>
+      <stop offset=".52" stop-color="#14532d"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="controller" x1="290" y1="245" x2="910" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e0f2fe"/>
+      <stop offset="1" stop-color="#bae6fd"/>
+    </linearGradient>
+    <filter id="shadow" x="-16%" y="-18%" width="132%" height="136%">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#020617" flood-opacity=".3"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="192" cy="588" r="184" fill="#22d3ee" opacity=".14"/>
+  <circle cx="992" cy="138" r="142" fill="#facc15" opacity=".18"/>
+  <path d="M0 620c130-60 278-42 426 18 150 61 282 48 420-44 132-88 250-98 354-35v191H0V620Z" fill="#ffffff" opacity=".08"/>
+  <g opacity=".23" stroke="#a7f3d0" stroke-width="2">
+    <path d="M120 152h960M120 302h960M120 452h960M120 602h960"/>
+    <path d="M258 90v584M462 90v584M666 90v584M870 90v584"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M360 294c58-40 130-22 169 20h142c39-42 111-60 169-20 60 41 86 134 78 202-7 59-44 92-92 78-33-10-52-45-78-77H452c-26 32-45 67-78 77-48 14-85-19-92-78-8-68 18-161 78-202Z" fill="url(#controller)"/>
+    <path d="M360 294c58-40 130-22 169 20h142c39-42 111-60 169-20 60 41 86 134 78 202-7 59-44 92-92 78-33-10-52-45-78-77H452c-26 32-45 67-78 77-48 14-85-19-92-78-8-68 18-161 78-202Z" fill="none" stroke="#0f172a" stroke-opacity=".16" stroke-width="5"/>
+    <rect x="416" y="374" width="108" height="30" rx="15" fill="#0f172a"/>
+    <rect x="455" y="335" width="30" height="108" rx="15" fill="#0f172a"/>
+    <circle cx="752" cy="362" r="30" fill="#22c55e"/>
+    <circle cx="826" cy="424" r="30" fill="#f97316"/>
+    <rect x="487" y="518" width="72" height="42" rx="9" fill="#ef4444"/>
+    <rect x="581" y="476" width="72" height="84" rx="9" fill="#06b6d4"/>
+    <rect x="675" y="434" width="72" height="126" rx="9" fill="#8b5cf6"/>
+    <path d="M476 216h120M642 216h82M770 216h76" stroke="#d9f99d" stroke-width="18" stroke-linecap="round" opacity=".88"/>
+  </g>
+</svg>

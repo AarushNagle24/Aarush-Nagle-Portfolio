@@ -11,7 +11,9 @@ export const navLinks = [
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Education', href: '#education' },
+  { label: 'Coursework', href: '#coursework' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 export const experiences = [
@@ -29,10 +31,10 @@ export const experiences = [
     description:
       'Founded XON Studios, an independent Roblox development studio whose games have reached 190+ million plays and more than 50 million players worldwide.',
     highlights: [
-      'Developed and maintained Roblox games using Lua scripting, UI design, bug fixes, performance optimization, and content updates.',
-      'Managed advertising campaigns and partnerships.',
-      'Hired and coordinated programmers and artists.',
-      "Reached 190+ million total plays across the studio's titles.",
+      'Developed and maintained Roblox games using Lua scripting, UI design, bug fixes, performance optimization, and content updates',
+      'Managed advertising campaigns and partnerships',
+      'Hired and coordinated programmers and artists',
+      "Reached 190+ million total plays across the studio's titles",
     ],
     stats: ['50M+ Players', '1M+ Monthly Active Users Milestone', '190+ million plays'],
     technologies: [
@@ -93,9 +95,9 @@ export const projects = [
     alt: 'Tower of Easy Roblox game thumbnail',
     live: 'https://www.roblox.com/games/6496227852/Tower-of-Easy',
     features: [
-      'Built and launched a Roblox platformer reaching 180M+ plays, 50M+ unique users, and more than 3,300 peak concurrent players.',
-      'Developed Lua systems for checkpoints, randomized levels, in-game shops, a music player, player GUIs and core gameplay features.',
-      'Maintained the game after launch through updates, bug fixes, tester feedback, and community-driven gameplay improvements.',
+      'Built and launched a Roblox platformer reaching 180M+ plays, 50M+ unique users, and more than 3,300 peak concurrent players',
+      'Developed Lua systems for checkpoints, randomized levels, in-game shops, a music player, player GUIs and core gameplay features',
+      'Maintained the game after launch through updates, bug fixes, tester feedback, and community-driven gameplay improvements',
     ],
     technologies: ['Lua', 'Roblox Studio', 'Game Development'],
     buttons: [{ label: 'Play Game', href: 'https://www.roblox.com/games/6496227852/Tower-of-Easy' }],
@@ -110,9 +112,9 @@ export const projects = [
     fallbackImage: asset('images/uva-navigation.svg'),
     alt: 'Illustrated UVA campus navigation map with route pins',
     features: [
-      'Built an interactive UVA campus map with Python, Streamlit, Folium, and OpenStreetMap for walking route lookup across campus.',
-      'Implemented pedestrian shortest-path routing with a custom bidirectional Dijkstra algorithm over OpenStreetMap campus data.',
-      'Built routing UI with 70+ UVA building dropdowns, 5-second animated search playback, and walking distance/time estimates.',
+      'Built an interactive UVA campus map with Python, Streamlit, Folium, and OpenStreetMap for walking route lookup across campus',
+      'Implemented pedestrian shortest-path routing with a custom bidirectional Dijkstra algorithm over OpenStreetMap campus data',
+      'Built routing UI with 70+ UVA building dropdowns, 5-second animated search playback, and walking distance/time estimates',
     ],
     technologies: ['Python', 'Streamlit', 'Folium', 'OpenStreetMap', 'Dijkstra'],
     buttons: [
@@ -129,9 +131,9 @@ export const projects = [
     fallbackImage: asset('images/auto-album.svg'),
     alt: 'Illustrated AI photo organization workflow',
     features: [
-      'Built a local AI image organization app with Streamlit, PyTorch, BLIP captions, and CLIP embeddings to classify uploaded images.',
-      'Implemented AI-generated file names, smart folder grouping, similarity-based sorting, and ZIP export for organized image batches.',
-      'Improved image-sorting accuracy with noisy-label filtering, similarity thresholds, fallback categories, and 31 automated tests.',
+      'Built a local AI image organization app with Streamlit, PyTorch, BLIP captions, and CLIP embeddings to classify uploaded images',
+      'Implemented AI-generated file names, smart folder grouping, similarity-based sorting, and ZIP export for organized image batches',
+      'Improved image-sorting accuracy with noisy-label filtering, similarity thresholds, fallback categories, and 31 automated tests',
     ],
     technologies: ['Python', 'Streamlit', 'PyTorch', 'BLIP', 'CLIP'],
     buttons: [
@@ -188,7 +190,7 @@ export const coursework = {
 export const skillGroups = [
   {
     title: 'Languages',
-    items: ['Java', 'Python', 'Lua'],
+    items: ['Java', 'Python', 'C', 'Lua'],
   },
   {
     title: 'AI / Data',

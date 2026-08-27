@@ -41,7 +41,7 @@ export default function EducationSection() {
           ))}
         </div>
 
-        <div className="coursework-section" aria-labelledby="coursework-heading">
+        <div className="coursework-section" id="coursework" aria-labelledby="coursework-heading">
           <SectionHeader id="coursework-heading" eyebrow="Coursework" title="Coursework" />
           <div className="coursework-grid">
             <CourseGroup title="Completed" items={coursework.completed} />

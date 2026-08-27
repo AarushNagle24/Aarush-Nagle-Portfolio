@@ -7,15 +7,12 @@
       (function () {
         try {
           var stored = localStorage.getItem('aarush-theme');
-          var system = window.matchMedia('(prefers-color-scheme: dark)').matches
-            ? 'dark'
-            : 'light';
-          var theme = stored || system;
+          var theme = stored || 'light';
           document.documentElement.dataset.theme = theme;
           document.documentElement.style.colorScheme = theme;
         } catch (error) {
-          document.documentElement.dataset.theme = 'dark';
-          document.documentElement.style.colorScheme = 'dark';
+          document.documentElement.dataset.theme = 'light';
+          document.documentElement.style.colorScheme = 'light';
         }
       })();
     </script>
@@ -26,7 +23,7 @@
     />
     <link rel="canonical" href="https://aarushnagle24.github.io/Aarush-Nagle-Portfolio/" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <meta name="theme-color" content="#10151f" />
+    <meta name="theme-color" content="#f6f8fb" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Aarush Nagle | Software Developer" />
     <meta
