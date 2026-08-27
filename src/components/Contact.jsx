@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="section-shell">
         <GlassCard
           className="contact-card"
-          initial={{ opacity: 0, y: 26 }}
+          initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.55 }}

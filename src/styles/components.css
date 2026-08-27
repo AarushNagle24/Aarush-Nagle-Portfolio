@@ -320,6 +320,20 @@
   background: #151b2a;
 }
 
+:root[data-theme="light"] .button-primary,
+:root[data-theme="light"] .button-secondary {
+  color: var(--text-strong);
+  border-color: var(--glass-border-strong);
+  background: #ffffff;
+}
+
+:root[data-theme="light"] .button-primary:hover,
+:root[data-theme="light"] .button-secondary:hover {
+  color: var(--text-strong);
+  border-color: rgba(55, 70, 95, 0.32);
+  background: #f8fafc;
+}
+
 .hero-visual {
   position: relative;
   min-height: 560px;
@@ -911,7 +925,7 @@
 }
 
 .contact-section {
-  padding-bottom: var(--section-spacing);
+  padding-bottom: calc(var(--section-spacing) + 24px);
 }
 
 .contact-card {
@@ -942,7 +956,7 @@
 }
 
 .site-footer {
-  padding: 26px 0 36px;
+  padding: 0 0 36px;
   color: var(--muted);
 }
 
