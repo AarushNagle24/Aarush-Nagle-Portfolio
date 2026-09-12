@@ -114,7 +114,7 @@ export const projects = [
     features: [
       'Built an interactive UVA campus map with Python, Streamlit, Folium, and OpenStreetMap for walking route lookup across campus',
       'Implemented pedestrian shortest-path routing with a custom bidirectional Dijkstra algorithm over OpenStreetMap campus data',
-      'Built routing UI with 70+ UVA building dropdowns, 5-second animated search playback, and walking distance/time estimates',
+      'Added dropdown selection for 70+ UVA buildings and additional navigation across parking lots and open ground on campus',
     ],
     technologies: ['Python', 'Streamlit', 'Folium', 'OpenStreetMap', 'Dijkstra'],
     buttons: [
