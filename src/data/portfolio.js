@@ -189,18 +189,18 @@ export const coursework = {
 export const skillGroups = [
   {
     title: 'Languages',
-    items: ['Java', 'Python', 'Lua', 'C'],
+    items: ['Java', 'Python', 'Lua', 'SQL', 'C'],
   },
   {
-    title: 'AI / Data',
-    items: ['PyTorch', 'BLIP', 'CLIP', 'Pandas', 'SQLite'],
+    title: 'Frameworks & Libraries',
+    items: ['Streamlit', 'Pandas', 'PyTorch', 'Folium', 'Leaflet'],
   },
   {
-    title: 'Development',
-    items: ['Git', 'VS Code', 'Agile / Scrum', 'Autodesk Inventor', 'Roblox Studio'],
+    title: 'Databases & Platforms',
+    items: ['SQLite', 'Drupal', 'Roblox Studio', 'OpenStreetMap'],
   },
   {
-    title: 'Mapping / Visualization',
-    items: ['Streamlit', 'Leaflet', 'OpenStreetMap'],
+    title: 'Tools & Technologies',
+    items: ['Git', 'GitHub', 'BLIP', 'CLIP'],
   },
 ];

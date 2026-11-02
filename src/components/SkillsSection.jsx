@@ -1,13 +1,13 @@
-import { Code2, Database, GitBranch, Map } from 'lucide-react';
+import { Code2, Database, GitBranch, Layers } from 'lucide-react';
 import { skillGroups } from '../data/portfolio.js';
 import GlassCard from './GlassCard.jsx';
 import SectionHeader from './SectionHeader.jsx';
 
 const icons = {
   Languages: Code2,
-  'AI / Data': Database,
-  Development: GitBranch,
-  'Mapping / Visualization': Map,
+  'Frameworks & Libraries': Layers,
+  'Databases & Platforms': Database,
+  'Tools & Technologies': GitBranch,
 };
 
 export default function SkillsSection() {
