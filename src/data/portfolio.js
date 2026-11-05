@@ -18,35 +18,6 @@ export const navLinks = [
 
 export const experiences = [
   {
-    id: 'xon-studios',
-    company: 'XON Studios',
-    organization: 'Roblox Game Studio',
-    location: 'Vienna, VA',
-    role: 'Owner & Lead Developer',
-    period: 'March 2021 - Present',
-    link: 'https://www.roblox.com/communities/9895654/XON-Studios',
-    linkLabel: 'View Roblox Community',
-    image: asset('images/xon-studios.png'),
-    fallbackImage: asset('images/xon-fallback.svg'),
-    description:
-      'Founded XON Studios, an independent Roblox development studio whose games have reached 190+ million plays and more than 50 million players worldwide.',
-    highlights: [
-      'Developed and maintained Roblox games using Lua scripting, UI design, bug fixes, performance optimization, and content updates',
-      'Managed advertising campaigns and partnerships',
-      'Hired and coordinated programmers and artists',
-      "Reached 190+ million total plays across the studio's titles",
-    ],
-    stats: ['50M+ Players', '1M+ Monthly Active Users Milestone', '190+ million plays'],
-    technologies: [
-      'Lua',
-      'Roblox Studio',
-      'Game Development',
-      'UI Development',
-      'Performance Optimization',
-    ],
-    featured: true,
-  },
-  {
     id: 'gavel-quill',
     company: 'Gavel and Quill',
     organization: 'Startup Incubator',
@@ -61,15 +32,15 @@ export const experiences = [
     spotlights: [
       {
         title: 'Budget Dashboard',
-        text: 'Built a Streamlit/Pandas budgeting dashboard for expense logging, spending trends, and category comparisons.',
+        text: 'Developed a Streamlit/Pandas budgeting dashboard for commuters with per-user expense logs and category spending charts',
       },
       {
         title: 'AI Training Platform',
-        text: 'Built a Streamlit/SQLite workplace AI training platform with custom employee courses, lesson tracking, and an admin dashboard.',
+        text: 'Built a Streamlit/SQLite employee AI training portal with bcrypt hashing, course join codes, quizzes, and admin progress tracking',
       },
       {
         title: 'Drupal Mapping Tool',
-        text: 'Built a reusable Drupal mapping module that imported 50,000+ CSV locations, displayed searchable Leaflet maps, and used dynamic category filters.',
+        text: 'Built a reusable Drupal/PHP module with Leaflet maps and a GeoJSON API for Bankcra’s bank/credit union finder and Press Forward’s local media finder; imported 50,000+ locations from CSV files into searchable maps with category and radius filters',
       },
     ],
     technologies: [
@@ -78,9 +49,38 @@ export const experiences = [
       'Pandas',
       'SQLite',
       'Drupal',
+      'PHP',
       'Leaflet',
-      'OpenStreetMap',
+      'GeoJSON',
     ],
+  },
+  {
+    id: 'xon-studios',
+    company: 'XON Studios',
+    organization: 'Roblox Game Studio',
+    location: 'Vienna, VA',
+    role: 'Owner & Lead Developer',
+    period: 'March 2021 - Present',
+    link: 'https://www.roblox.com/communities/9895654/XON-Studios',
+    linkLabel: 'View Roblox Community',
+    image: asset('images/xon-studios.png'),
+    fallbackImage: asset('images/xon-fallback.svg'),
+    description:
+      'Founded XON Studios, an independent Roblox game studio whose titles have reached more than 50 million players worldwide',
+    highlights: [
+      'Developed and maintained Roblox games in Lua for gameplay systems, UI development, debugging, and performance optimization',
+      'Managed advertising campaigns and partnerships while hiring and coordinating contractors, including programmers and artists',
+      "Earned Roblox’s Black Crown of O’s after surpassing 1 million monthly active users across the studio’s titles",
+    ],
+    stats: ['50M+ Players', '1M+ Monthly Active Users', 'Black Crown of O’s'],
+    technologies: [
+      'Lua',
+      'Roblox Studio',
+      'Game Development',
+      'UI Development',
+      'Performance Optimization',
+    ],
+    featured: true,
   },
 ];
 
@@ -89,15 +89,15 @@ export const projects = [
     id: 'tower-of-easy',
     title: 'Tower of Easy',
     category: 'Roblox Game',
-    date: 'Live March 2021 - Present',
+    date: 'March 2021 - Present',
     image: asset('images/tower-of-easy.svg'),
     fallbackImage: asset('images/tower-of-easy.svg'),
     alt: 'Tower of Easy Roblox game thumbnail',
     live: 'https://www.roblox.com/games/6496227852/Tower-of-Easy',
     features: [
-      'Built and launched a Roblox platformer reaching 180M+ plays, 50M+ unique users, and more than 3,300 peak concurrent players',
-      'Developed Lua systems for checkpoints, randomized levels, in-game shops, a music player, player GUIs and core gameplay features',
-      'Maintained the game after launch through updates, bug fixes, tester feedback, and community-driven gameplay improvements',
+      'Built and launched a Roblox platformer reaching 180M+ plays, 50M+ unique users, and more than 3,500 peak concurrent players',
+      'Developed Lua systems for checkpoints, randomized levels, in-game shops, music playback and custom interactive player interfaces',
+      'Fixed gameplay bugs, optimized performance, and shipped gameplay improvements based on user and tester feedback post-launch',
     ],
     technologies: ['Lua', 'Roblox Studio', 'Game Development'],
     buttons: [{ label: 'Play Game', href: 'https://www.roblox.com/games/6496227852/Tower-of-Easy' }],
@@ -107,14 +107,14 @@ export const projects = [
     id: 'uva-navigation',
     title: 'UVA Campus Navigation App',
     category: 'Mapping & Routing App',
-    date: 'Live July 2026 - August 2026',
+    date: 'July 2026 - August 2026',
     image: asset('images/uva-navigation.svg'),
     fallbackImage: asset('images/uva-navigation.svg'),
     alt: 'Illustrated UVA campus navigation map with route pins',
     features: [
-      'Built an interactive UVA campus map with Python, Streamlit, Folium, and OpenStreetMap for walking route lookup across campus',
-      'Implemented pedestrian shortest-path routing with a custom bidirectional Dijkstra algorithm over OpenStreetMap campus data',
-      'Added dropdown selection for 70+ UVA buildings and additional navigation across parking lots and open ground on campus',
+      'Developed a Python/Streamlit campus navigation app using Folium and OpenStreetMap data to map 70+ UVA campus locations',
+      'Implemented bidirectional Dijkstra on OpenStreetMap pedestrian graphs to compute shortest paths, distances, and walking times',
+      'Expanded walking routes through parking areas and unpaved terrain while caching map data for 7 days to handle API quotas',
     ],
     technologies: ['Python', 'Streamlit', 'Folium', 'OpenStreetMap', 'Dijkstra'],
     buttons: [
@@ -126,14 +126,14 @@ export const projects = [
     id: 'auto-album',
     title: 'Auto Album',
     category: 'Computer Vision Project',
-    date: 'Live July 2026 - August 2026',
+    date: 'July 2026 - August 2026',
     image: asset('images/auto-album.svg'),
     fallbackImage: asset('images/auto-album.svg'),
     alt: 'Illustrated AI photo organization workflow',
     features: [
-      'Built a local AI image organization app with Streamlit, PyTorch, BLIP captions, and CLIP embeddings to classify uploaded images',
-      'Implemented AI-generated file names, smart folder grouping, similarity-based sorting, and ZIP export for organized image batches',
-      'Improved image-sorting accuracy with noisy-label filtering, similarity thresholds, fallback categories, and 31 automated tests',
+      'Built a local AI photo organizer with Streamlit, PyTorch, BLIP captions and CLIP embeddings to automate uploaded image sorting',
+      'Implemented CLIP-based cosine similarity clustering and dynamic folder naming to automatically group related photos by content',
+      'Implemented rule-based filters for unreliable BLIP captions, preventing inaccurate AI-generated filenames and folder assignments',
     ],
     technologies: ['Python', 'Streamlit', 'PyTorch', 'BLIP', 'CLIP'],
     buttons: [
@@ -201,6 +201,6 @@ export const skillGroups = [
   },
   {
     title: 'Tools & Technologies',
-    items: ['Git', 'GitHub', 'BLIP', 'CLIP'],
+    items: ['Git', 'GitHub', 'Docker', 'BLIP', 'CLIP', 'Autodesk Inventor', 'Agile/Scrum'],
   },
 ];
